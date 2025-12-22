@@ -1,0 +1,20 @@
+package com.tnsif.change.code;
+
+class C2 {
+    void show(int a) {
+    	System.out.println("C2 show:"+a);
+    }  
+}
+
+class D2 extends C2 {
+    void show(int a) {
+        System.out.println("D2 show:"+a);
+    }
+}
+
+public class Test_8 {
+    public static void main(String[] args) {
+        C2 obj = new D2();   
+        obj.show(10);
+    }
+}
